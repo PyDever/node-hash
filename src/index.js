@@ -72,7 +72,7 @@ var hmc_pjw = function (str) {
 		var g = h & 0xf0000000;
 		if (g != 0) {
 			h = h ^ (g >> 24);
-        	h = h ^ g;
+        		h = h ^ g;
 		}
 	}
 	return (h & 0xffffffffff).toString(16);
