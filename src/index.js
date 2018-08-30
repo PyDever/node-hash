@@ -7,7 +7,7 @@ SPEACIAL THANKS TO:
 
 Arash Partow - Author of DJB2 and http://www.partow.net/
 
-Margaret Fleck & Geoff Kuenning - Computer Science Team at Harvey Mudd College.
+Margaret Fleck & Geoff Kuenning - Computer Science Team at Harvey Mudd College
 
 Prof. Charles Leiserson - Introduction to Algorithms at Massachusetts Institute of Technology
 Prof. Erik Demaine - Introduction to Algorithms II at Massachusetts Institute of Technology
