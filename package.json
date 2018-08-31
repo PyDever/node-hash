@@ -1,8 +1,8 @@
 {
-  "name": "node-hash,
+  "name": "node-hash",
   "version": "1.0.0",
   "description": "simple hash",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
