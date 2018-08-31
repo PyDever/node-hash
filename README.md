@@ -1,1 +1,1 @@
-# node-hash
+# node-algorithms
