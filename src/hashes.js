@@ -1,7 +1,3 @@
-
-
-
-
 /*
 SPEACIAL THANKS TO:
 
