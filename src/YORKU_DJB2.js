@@ -1,9 +1,11 @@
 
 /*
 Daniel J. Bernstein's Algorithm
+
+(Implemented in C by York University's CS Department)
 */
 
-var djb2 = function (str) {
+var yorku_djb2 = function (str) {
 	var h = 5381;
 	var i = 0;
 

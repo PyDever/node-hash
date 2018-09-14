@@ -2,6 +2,8 @@
 
 /*
 Donald E. Knuth's Algorithm
+
+(Implemented in C by Arash Partow)
 */
 var dek = function (str) {
 	var h = str.length;
