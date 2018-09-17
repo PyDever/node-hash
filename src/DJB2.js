@@ -12,10 +12,12 @@ var djb2 = function (str) {
 
 	for (var i = 0; i < str.length; ++i) {
 
-		hash = (33 * hash ^ str.charCodeAt(i)) >>> 0;
+		hash = (33 * hash ^ str.charCodeAt(i));
 	}
 	return hash;
 }
 
-console.log((djb2('hello')).toString(16));
+console.log(djb2('hello'));
+
+
 

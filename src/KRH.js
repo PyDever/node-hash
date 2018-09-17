@@ -19,11 +19,12 @@ var krh = function (str) {
 									   			// 0x0000FFFF = highest 16-bits
 
 		hash = 33 * hash ^ str.charCodeAt(i); 	// DJB2..? wait, theres more
-		hash = (hash ^ low_8) >>> 0;		  	// XOR by lowest 8-bits, mask-out
+		hash = hash ^ low_8;		  	// XOR by lowest 8-bits
 
 	}
 	return hash;
 }
 
-console.log(krh("hello").toString(16));
+console.log(krh("hello"));
+
 

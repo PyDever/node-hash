@@ -16,5 +16,5 @@ var sdbm = function (str) {
 	return hash;
 }
 
-console.log((sdbm('hello')).toString(16));
+console.log(sdbm('hello'));
 
