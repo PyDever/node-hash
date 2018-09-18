@@ -12,12 +12,22 @@ var djb2 = function (str) {
 
 	for (var i = 0; i < str.length; ++i) {
 
-		hash = (33 * hash ^ str.charCodeAt(i));
+		hash = (33 * hash + str.charCodeAt(i));
 	}
 	return hash;
 }
 
 console.log(djb2('hello'));
+
+
+/*
+Summary:
+
+Believed to be the most superior hashing algorithm, this 
+one is slow and not secure in the slightest. The only redeeming
+factor of this algorithm is the highly efficient
+integers chosen (33...5831)
+*/
 
 
 
