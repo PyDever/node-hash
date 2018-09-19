@@ -14,7 +14,7 @@ OR
 
 var krh = function (str) {
 
-	var hash = 5831;
+	var hash = 5381;
 
 	for (var i = 0; i < str.length; ++i) {
 		/* extract first 8-bits from hash.
