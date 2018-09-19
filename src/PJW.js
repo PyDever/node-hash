@@ -16,7 +16,7 @@ var pjw = function (str) {
 
 		if (g !== 0) {
 			hash = hash ^ (g >> 24);
-			h = h ^ g  
+			hash = hash ^ g  
 		}   
 	}
 	return hash;

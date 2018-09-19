@@ -26,7 +26,7 @@ Summary:
 Believed to be the most superior hashing algorithm, this 
 one is slow and not secure in the slightest. The only redeeming
 factor of this algorithm is the highly efficient
-integers chosen (33...5831)
+integers chosen (33...5381)
 */
 
 
