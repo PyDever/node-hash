@@ -4,6 +4,14 @@ Kaleb R. Horvath's Algorithm
 (Borrowing constants from DJB2 (5831...33))
 */
 
+function sigma (k, n) {
+	var x = 0;
+	for (let i = 0; i < k; ++i) {
+		x += (n + i);
+	}
+	return x;
+}
+
 var krh = function (str) {
 
 	var hash = 5381;
@@ -26,27 +34,24 @@ var krh2 = function (str) {
 
 	var hash = 5381;
 
-	for (var i = 0; i < str.length; ++i) {
-		/* extract first 8-bits from hash.
-		because 32-bits is max, make sure to extend
-		0xFF to 0xFF000000 to 
-		grab first (lowest) 8-bits */
-		var low_8 = hash & 0xFF000000;
-		hash = (33 * hash) ^ str.charCodeAt(i);
-		hash = (hash ^ low_8) ^ low_8;			// XOR by lowest 8-bits, XOR again
-		hash = (hash << 5);						// left shift by 5-bits
+	for (let i = 0; i < str.length; ++i) {
+
+		var low_8 = hash & 0xFF000000; // lowest 8-bits of current hash state
+
+		hash = (33 * hash) ^ sigma(str.charCodeAt(i), 1);
+		hash = hash ^ low_8;
 	}
 	return Math.abs(hash);
 }
 
 console.log(krh2("hello").toString(16));
-console.log(krh("hello").toString(16));
 
 /*
 Summary:
 
 I created this one. It is a mix between DJB2 and 
-some other hashes I found online. It is equiv. to the
-PJW hash and in my opinion, slightly dominant.
+some other hashes I found online. Through multiple tests,
+I have concluded that KRH2 is faster than the 
+highly regarded PJW hash.
 */
 
